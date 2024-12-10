@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class BotoesPrincipal extends StatelessWidget {
   const BotoesPrincipal({super.key});
@@ -61,19 +62,15 @@ class BotoesPrincipal extends StatelessWidget {
 
   Widget _buildButtonWithImage(BuildContext context, String text,
       String imagePath, String url, Color color, double screenWidth) {
-    // void launchURL(String url) async {
-    //   Uri uri = Uri.parse(url);
+    void launchURL(String url) async {
+      Uri uri = Uri.parse(url);
 
-    //   if (await canLaunchUrl(uri)) {
-    //     await launchUrl(uri, mode: LaunchMode.externalApplication);
-    //   } else {
-    //     throw 'Não foi possível abrir o link: $url';
-    //   }
-    // }
+      if (!await launchUrl(uri)) throw 'Não foi possível abrir o link: $url';
+    }
 
     return Expanded(
       child: GestureDetector(
-        onTap: () => print('Site'),
+        onTap: () => launchURL(url),
         child: Container(
           height: 100,
           margin: const EdgeInsets.all(8.0),
