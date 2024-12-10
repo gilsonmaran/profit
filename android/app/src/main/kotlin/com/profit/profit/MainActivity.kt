@@ -1,4 +1,4 @@
-package com.example.profit_v3
+package com.profit.profit
 
 import io.flutter.embedding.android.FlutterActivity
 
