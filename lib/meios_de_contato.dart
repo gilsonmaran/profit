@@ -45,12 +45,12 @@ Widget _icons(context) {
   return Row(
     mainAxisAlignment: MainAxisAlignment.spaceBetween,
     children: [
-      _buildContactIcon("contato_sac.png", "tel:+551936419255", screenHeight),
-      _buildContactIcon("contato_cnpj.png", "tel:+551922850096", screenHeight),
+      _buildContactIcon("contatos/sac.png", "tel:+551936419255", screenHeight),
+      _buildContactIcon("contatos/cnpj.png", "tel:+551922850096", screenHeight),
       _buildContactIcon(
-          "contato_whatsapp.png", "https://wa.me/5501999642207", screenHeight),
+          "contatos/whatsapp.png", "https://wa.me/5501999642207", screenHeight),
       _buildContactIcon(
-          "contato_email.png", "mailto:sac@profitlabs.com.br", screenHeight),
+          "contatos/email.png", "mailto:sac@profitlabs.com.br", screenHeight),
     ],
   );
 }

@@ -45,13 +45,13 @@ Widget _icons(context) {
   return Row(
     mainAxisAlignment: MainAxisAlignment.spaceBetween,
     children: [
-      _buildContactIcon("redes_instagram.png",
+      _buildContactIcon("social/instagram.png",
           'https://www.instagram.com/profit.labs', screenHeight),
-      _buildContactIcon("redes_facebook.png",
+      _buildContactIcon("social/facebook.png",
           "https://www.facebook.com/profitlabs", screenHeight),
-      _buildContactIcon("redes_youtube.png",
+      _buildContactIcon("social/youtube.png",
           "https://www.youtube.com/@profitlabstv", screenHeight),
-      _buildContactIcon("redes_linkedin.png",
+      _buildContactIcon("social/linkedin.png",
           "https://www.linkedin.com/company/profitlaboratorios", screenHeight),
     ],
   );
