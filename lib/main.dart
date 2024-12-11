@@ -42,23 +42,13 @@ class HomePage extends StatelessWidget {
                 image: AssetImage("assets/background.png"), fit: BoxFit.cover),
           ),
           child: const Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Expanded(
-                child: SingleChildScrollView(
-                  child: Column(
-                    children: [
-                      Header(),
-                      SizedBox(height: 20),
-                      BotoesPrincipal(),
-                      SizedBox(height: 40),
-                      MeiosDeContato(),
-                      SizedBox(height: 40),
-                      NossasRedes(),
-                      SizedBox(height: 40),
-                    ],
-                  ),
-                ),
-              ),
+              Header(),
+              BotoesPrincipal(),
+              MeiosDeContato(),
+              NossasRedes(),
               Rodape()
             ],
           ),

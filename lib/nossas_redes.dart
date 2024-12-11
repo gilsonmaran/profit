@@ -6,23 +6,17 @@ class NossasRedes extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20),
-          child: Align(
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      child: Column(
+        children: [
+          Align(
             alignment: Alignment.centerLeft,
             child: _title(),
           ),
-        ),
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20),
-          child: Align(
-            alignment: Alignment.centerLeft,
-            child: _icons(context),
-          ),
-        ),
-      ],
+          _icons(context),
+        ],
+      ),
     );
   }
 
