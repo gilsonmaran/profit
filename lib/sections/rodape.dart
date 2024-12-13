@@ -5,8 +5,6 @@ class Rodape extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double screenWidth = MediaQuery.of(context).size.width;
-
-    return Image.asset("assets/rodape.png", width: screenWidth);
+    return Image.asset("assets/rodape.png");
   }
 }

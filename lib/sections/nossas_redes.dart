@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:profit_v3/contatct_button.dart';
-import 'package:profit_v3/section_title.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:profit_v3/components/contatct_button.dart';
+import 'package:profit_v3/components/section_title.dart';
 
 class NossasRedes extends StatelessWidget {
   const NossasRedes({super.key});
   @override
   Widget build(BuildContext context) {
     double screenHeight = MediaQuery.of(context).size.height;
+
+    String instagram = 'https://www.instagram.com/profit.labs';
+    String facebook = "https://www.facebook.com/profitlabs";
+    String youtube = "https://www.youtube.com/@profitlabstv";
+    String linkedIn = "https://www.linkedin.com/company/profitlaboratorios";
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -20,16 +24,10 @@ class NossasRedes extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              contactButton("social/instagram.png",
-                  'https://www.instagram.com/profit.labs', screenHeight),
-              contactButton("social/facebook.png",
-                  "https://www.facebook.com/profitlabs", screenHeight),
-              contactButton("social/youtube.png",
-                  "https://www.youtube.com/@profitlabstv", screenHeight),
-              contactButton(
-                  "social/linkedin.png",
-                  "https://www.linkedin.com/company/profitlaboratorios",
-                  screenHeight),
+              contactButton("social/instagram.png", instagram, screenHeight),
+              contactButton("social/facebook.png", facebook, screenHeight),
+              contactButton("social/youtube.png", youtube, screenHeight),
+              contactButton("social/linkedin.png", linkedIn, screenHeight),
             ],
           ),
         ],

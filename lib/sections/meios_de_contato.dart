@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:profit_v3/contatct_button.dart';
-import 'package:profit_v3/section_title.dart';
+import 'package:profit_v3/components/contatct_button.dart';
+import 'package:profit_v3/components/section_title.dart';
 
 class MeiosDeContato extends StatelessWidget {
   const MeiosDeContato({super.key});
@@ -8,6 +8,11 @@ class MeiosDeContato extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double screenHeight = MediaQuery.of(context).size.height;
+
+    String sac = "tel:+551936419255";
+    String cnpj = "tel:+551922850096";
+    String whatsApp = "https://wa.me/5501999642207";
+    String email = "mailto:sac@profitlabs.com.br";
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -20,14 +25,10 @@ class MeiosDeContato extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              contactButton(
-                  "contatos/sac.png", "tel:+551936419255", screenHeight),
-              contactButton(
-                  "contatos/cnpj.png", "tel:+551922850096", screenHeight),
-              contactButton("contatos/whatsapp.png",
-                  "https://wa.me/5501999642207", screenHeight),
-              contactButton("contatos/email.png",
-                  "mailto:sac@profitlabs.com.br", screenHeight),
+              contactButton("contatos/sac.png", sac, screenHeight),
+              contactButton("contatos/cnpj.png", cnpj, screenHeight),
+              contactButton("contatos/whatsapp.png", whatsApp, screenHeight),
+              contactButton("contatos/email.png", email, screenHeight),
             ],
           ),
         ],

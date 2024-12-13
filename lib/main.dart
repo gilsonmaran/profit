@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:profit_v3/components/background.dart';
 import 'package:profit_v3/sections/botoes_principal.dart';
 import 'package:profit_v3/sections/header.dart';
 import 'package:profit_v3/sections/meios_de_contato.dart';
@@ -32,15 +33,7 @@ class HomePage extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         body: Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [Colors.blue.shade900, Colors.blue],
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-            ),
-            image: const DecorationImage(
-                image: AssetImage("assets/background.png"), fit: BoxFit.cover),
-          ),
+          decoration: background(),
           child: const Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.start,
