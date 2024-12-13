@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:profit_v3/botoes_principal.dart';
-import 'package:profit_v3/header.dart';
-import 'package:profit_v3/meios_de_contato.dart';
-import 'package:profit_v3/nossas_redes.dart';
-import 'package:profit_v3/rodape.dart';
+import 'package:profit_v3/sections/botoes_principal.dart';
+import 'package:profit_v3/sections/header.dart';
+import 'package:profit_v3/sections/meios_de_contato.dart';
+import 'package:profit_v3/sections/nossas_redes.dart';
+import 'package:profit_v3/sections/rodape.dart';
 import 'package:profit_v3/splash_screen.dart';
 
 void main() {
