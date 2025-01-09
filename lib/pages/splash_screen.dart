@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
-import 'main.dart';
+
+import 'package:profit_v3/pages/home_page.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -25,12 +26,10 @@ class SplashScreenState extends State<SplashScreen>
     _animation = CurvedAnimation(parent: _controller, curve: Curves.easeInOut);
     _controller.forward();
 
-    // Timer para redirecionar para a página principal
     Timer(const Duration(seconds: 4), () {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(
-            builder: (context) => const HomePage()), // Navega para HomePage
+        MaterialPageRoute(builder: (context) => const HomePage()),
       );
     });
   }
