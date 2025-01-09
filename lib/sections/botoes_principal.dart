@@ -72,7 +72,6 @@ class BotoesPrincipal extends StatelessWidget {
       child: GestureDetector(
         onTap: () => launchURL(url),
         child: Container(
-          height: 100,
           margin: const EdgeInsets.all(8.0),
           decoration: BoxDecoration(
             color: color,
